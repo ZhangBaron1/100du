@@ -17,6 +17,8 @@ body { font-size:12px; font-family:"Î¢ÈíÑÅºÚ"; }
 	background:-webkit-linear-gradient(top,#FFFFFF,#F8F8F8);
 	background:-ms-linear-gradient(top,#FFFFFF,#F8F8F8);
 	background:linear-gradient(top,#FFFFFF,#F8F8F8);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FFFFFF, endColorstr=#f8f8f8)";
+	+background:#fafafa;
 }
 
 /* public  */
@@ -24,3 +26,18 @@ body { font-size:12px; font-family:"Î¢ÈíÑÅºÚ"; }
 .clear:after{content:'';display:block;clear:both}
 .fl{float:left}
 .fr{float:right}
+
+
+/*layout*/
+#header{height:30px;width:960px;margin:0 auto;border-radius:6px;}
+#nav{}
+#search{}
+.content{}
+.main{}
+.section{}
+.options{}
+.main_ad{}
+.side{}
+.side_section{}
+.side_ad{}
+#footer{}
