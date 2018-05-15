@@ -9,7 +9,7 @@ img { border:none; vertical-align:top; }
 table { border-collapse:collapse; }
 input,textarea { outline:none; }
 textarea { resize:none; overflow:auto; }
-body { font-size:12px; font-family:"Î¢ÈíÑÅºÚ"; }
+body { font-size:12px; font-family:"Î¢ÈíÑÅºÚ"; margin-bottom:30px}
 /* end reset */
 
 .gradient{
@@ -29,15 +29,15 @@ body { font-size:12px; font-family:"Î¢ÈíÑÅºÚ"; }
 
 
 /*layout*/
-#header{height:30px;width:960px;margin:0 auto;border-radius:6px;}
-#nav{}
-#search{}
-.content{}
-.main{}
-.section{}
-.options{}
-.main_ad{}
-.side{}
-.side_section{}
-.side_ad{}
-#footer{}
+#header{height:30px;width:960px;margin:0 auto;border-radius:0 0 6px 6px;}
+#nav{width:960px;height:100px;margin:0 auto;background:#ff4}
+#search{width:958px;height:114px;margin:0 auto 10px;background:#fefefe;border:1px solid #dbdbdb;border-radius:6px;}
+.content{width:960px;margin:0 auto;}
+.main{width:710px;}
+.section{width:318px;height:200px;margin-bottom:10px;padding:0 15px;background:#ff3;border:1px solid #dbdbdb;border-radius:6px;}
+.options{width:318px;height:200px;padding:0 15px;margin-bottom:10px;background:#ff3;border:1px solid #dbdbdb;border-radius:6px;}
+.main_ad{margin-bottom:10px;border-radius:6px;overflow:hidden}
+.side{width:240px}
+.side_section{width:240px;height:100px;border-radius:6px;background:#ff0;margin-bottom:10px}
+.side_ad{border-radius:6px;overflow:hidden;margin-bottom:10px}
+#footer{width:958px;height:80px;border-radius:6px;background:#00f;margin:0 auto;}
