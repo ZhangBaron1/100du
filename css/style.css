@@ -55,8 +55,8 @@ body { font-size:12px; font-family:"΢���ź�"; margin-bottom:30px; }
 
 
 .options .nav { position:relative; height:34px; z-index:2; }
-.options .nav li { width:172px; height:33px; border-radius:6px 6px 0 0; border:1px solid #dbdbdb; border-bottom:none; }
-.options .nav .active { width:172px; height:34px; background:#fff; }
+.options .nav li { width:172px; height:33px; line-height:33px; text-align: center; border-radius:6px 6px 0 0; border:1px solid #dbdbdb; border-bottom:none; position: relative; }
+.options .nav .active { width:172px; height:34px; line-height:34px; text-align: center; background:#fff; }
 .options .con { width:348px; height:100px; border-radius:0 0 6px 6px; border:1px solid #dbdbdb; position:absolute; top:34px; left:0; z-index:1;}
 
 #header .city { float:left; padding:5px 0 0 20px; color:#666; }
@@ -122,8 +122,16 @@ body { font-size:12px; font-family:"΢���ź�"; margin-bottom:30px; }
 #search .triangle_down_red { top: 17px; right: 0px; }
 
 
-.video_title { width:130px; height:42px; font-family: arial; font-size:18px; font-weight: normal; line-height:42px; color:#c40d0e; background:url("../img/video_bg.gif") no-repeat 105px 12px;}
+.video_title { width:130px; height:42px; font-family: arial; font-size:18px; font-weight: normal; line-height:42px; color:#c40d0e; background:url("../img/video_bg.gif") no-repeat 95px 8px; position: relative; }
+.video_title sup { font-family: '宋体'; position: absolute; top: -10px;}
 .video_box { margin-bottom: 13px;}
 .video .video_list { padding-left: 75px; height: 78px; background:url("../img/video_bg.gif") no-repeat 3px -47px;}
 .video .video_list li { width:241px; height:20px; line-height: 20px; padding-left: 16px; background:url("../img/dot.gif") no-repeat 9px 10px; color:#4d4d4d; }
 .video .video_list li a:hover { text-decoration: underline; }
+
+.main_title { position: relative; height: 40px; line-height: 40px; }
+.main_title strong, .nav li strong { font-family: arial; color:#cc0d13; font-size: 12px;}
+.main_title span, .nav li span { font-family: '微软雅黑'; color:#000;  }
+.main_title  a { position: absolute; right: 0px; top: 15px; }
+
+.nav .triangle_down_red, .nav .triangle_down_gray { right: 12px; top: 15px;}
