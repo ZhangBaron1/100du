@@ -43,7 +43,7 @@ body { font-size:12px; font-family:"΢���ź�"; margin-bottom:30px; }
 #nav { height:100px; position:relative; }
 #search { width:958px; height:114px; margin:0 auto 10px; background:#fefefe; position:relative; }
 .main { width:710px; }
-.section { width:318px; height:200px; padding:0 15px; background:#ff3; }
+.section { width:318px; padding:0 15px; }
 .options { width:350px; height:200px; position:relative; }
 .main_ad { border-radius:6px; overflow:hidden; }
 .main_wrap { padding-bottom:10px;}
@@ -120,3 +120,10 @@ body { font-size:12px; font-family:"΢���ź�"; margin-bottom:30px; }
 #search .update span { color: #999;}
 #search .triangle_up { top: 8px; right: 0px; }
 #search .triangle_down_red { top: 17px; right: 0px; }
+
+
+.video_title { width:130px; height:42px; font-family: arial; font-size:18px; font-weight: normal; line-height:42px; color:#c40d0e; background:url("../img/video_bg.gif") no-repeat 105px 12px;}
+.video_box { margin-bottom: 13px;}
+.video .video_list { padding-left: 75px; height: 78px; background:url("../img/video_bg.gif") no-repeat 3px -47px;}
+.video .video_list li { width:241px; height:20px; line-height: 20px; padding-left: 16px; background:url("../img/dot.gif") no-repeat 9px 10px; color:#4d4d4d; }
+.video .video_list li a:hover { text-decoration: underline; }
