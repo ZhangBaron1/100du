@@ -48,7 +48,7 @@ body { font-size:12px; font-family:"΢���ź�"; margin-bottom:30px; }
 .main_ad { border-radius:6px; overflow:hidden; }
 .main_wrap { padding-bottom:10px;}
 .side { width:240px; }
-.side_section { padding:0 12px; height:100px; border-radius:6px; background:#ff0; }
+.side_section { padding:0 12px; height:100px; border-radius:6px; }
 .side_ad { border-radius:6px; overflow:hidden; }
 .side_ad_border { width:238px; height:88px; overflow:hidden; }
 #footer { width:958px; height:80px; border-radius:6px; background:#f9f9f9; margin:0 auto; }
@@ -149,3 +149,16 @@ body { font-size:12px; font-family:"΢���ź�"; margin-bottom:30px; }
 .hot_list .text h3:hover { text-decoration: underline; }
 .hot_list .text p { color: #6e6e6e; }
 .hot_list .more { position: absolute; right: 0px; bottom: 6px; }
+
+
+.tab { height: 25px; border-bottom: 1px solid #dadada; }
+.tab ul { position: relative; margin-bottom: -1px; height: 26px; }
+.tab ul li { float: left; height: 24px; border: 1px solid #dadada; border-radius: 4px 4px 0 0; margin-right: -1px; line-height: 24px; text-align: center; position: relative; }
+.tab ul .active { color: #454545; font-weight: bold; border-bottom: 1px  solid #fff; }
+.tab li a { top: 10px; right: 12px; }
+
+
+.section .tab { padding: 0 10px; }
+.section .tab li {  width: 98px; }
+.side_section .tab { padding: 0 6px; }
+.side_section .tab li { width: 66px; }
