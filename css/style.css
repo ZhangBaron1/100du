@@ -180,3 +180,26 @@ body { font-size:12px; font-family:"΢���ź�"; margin-bottom:30px; }
 .section .col_1 { width: 272px; }
 .section .col_2 { width: 34px; }
 .col_2 img { position: relative; top: 9px; left: 9px;}
+
+
+.pic_list li { overflow: hidden; border-bottom: 1px dotted #cbcbca; padding-bottom: 10px; margin-top: 10px; }
+.pic_list .img { width: 94px; height: 71px; border: 1px solid #dadada; }
+.pic_list .img a { display: block; width: 90px; height: 67px; margin: 2px; }
+.pic_list .img:hover { border: 1px solid #bb0d0d; }
+
+.pic_list .text p { color: #999;  line-height: 18px; }
+.pic_list .text h3 { color: #b80000; font-weight: normal; font-size: 12px; height: 18px; line-height: 18px; margin: 12px 0px 4px 0px;  }
+.pic_list .text a { color: #666; }
+.pic_list .text a:hover { text-decoration: underline; }
+
+.wrap1 { margin-bottom: 12px; }
+.wrap2 .pic_list li, .wrap3 .pic_list li { border-bottom: none; }
+.wrap1 .pic_list .img, .wrap2 .pic_list .img { float: left; }
+.wrap1 .pic_list .text, .wrap2 .pic_list .text { float: right; position: relative; left: -12px; }
+
+.wrap3 .pic_list { overflow: hidden ; margin-bottom: 10px; }
+
+.shop360 .img { width: 214px; height: 110px; }
+.shop360 .textlink a { height: 18px; line-height: 18px; color:#333; }
+.shop360 .textlink a:hover { text-decoration: underline; }
+.shop360 .textlink { margin: 6px 0px 6px 0px;  }
