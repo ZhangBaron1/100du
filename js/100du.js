@@ -8,7 +8,7 @@ $(function(){
            '浏览全文。。。。阿斯顿噶哒打',
            '看看视频吧。。。',
        ];
-       var oText = $(".form").find(".text");
+       var oText = $("#search_txt").find(".text");
        var iNow = 0;
        oText.val(aTxt[iNow]);
        var aLi = $("#menu li");
@@ -35,4 +35,9 @@ $(function(){
        });
    })();
 
+  // 搜素 update
+   (function(){
+       $(".update ul")
+       setTimeout()
+   })(); 
 });
