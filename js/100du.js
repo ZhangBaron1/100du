@@ -37,7 +37,75 @@ $(function(){
 
   // 搜素 update
    (function(){
-       $(".update ul")
-       setTimeout()
+      var ud_ul = $(".update ul");
+      var oDiv = $(".update");
+      var li_length = ud_ul.find('li').length;
+      var iH =  ud_ul.find('li').height();  
+      var iNow = 0;
+      var time = null;
+
+          //console.log(li_length);
+          //console.log(iH);
+      
+          $("#updateUpBtn").click(function(){
+            doMove(-1);
+          });
+          $("#updateDownBtn").click(function(){
+            doMove(1);
+          });
+
+          function autoPlay(){
+            time = setInterval(function(){
+                scroll(-1)
+            },1500);
+          }
+
+          autoPlay();
+
+          function doMove(direction){
+            iNow += direction;
+            
+            if(Math.abs(iNow) >= li_length )
+            {
+                for(var num = 0; num < li_length-1; num++ )
+                {
+                  ud_ul.find("li:eq(0)").appendTo(ud_ul);
+                }
+                 ud_ul.css({'top':0});
+                 iNow = -1;
+            }
+            if(iNow > 0)
+            {
+               for(var num = 0; num < li_length-1; num++ )
+                {
+                  ud_ul.find("li:last").prependTo(ud_ul);
+                }   
+               console.log(ud_ul.html());
+               console.log(-iH);
+                 ud_ul.css({'top':-iH*(li_length-1)});
+                iNow = -(li_length-2);
+            }
+               console.log(iNow);
+            ud_ul.stop().animate({'top':iH*iNow},1000,);
+            
+          }
+
+          function scroll(direction){
+            iNow += direction;
+            if(Math.abs(iNow) >= li_length)
+            {
+               for(var num = 0; num < li_length-1; num++ )
+               {
+                 ud_ul.find("li:eq(0)").appendTo(ud_ul);
+               }
+                ud_ul.css({'top':0});
+                iNow = -1;
+            }
+            ud_ul.stop().animate({'top':iH*iNow},1000);
+          }
+
+          oDiv.hover(function(){
+            clearInterval(time); },function(){autoPlay();}) 
+          
    })(); 
 });
