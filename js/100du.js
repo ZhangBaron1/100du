@@ -119,4 +119,53 @@ $(function(){
             })
        }) 
   })();  
+
+  // 精彩推荐 图片切换
+  (function(){
+    var pic_B = $("#PicREC .big_pic li");
+    var pic_S = $("#PicREC .small_pic li");
+    var pic_P = $("#PicREC p");
+    var time = null;
+    var iNow = 0;
+    var pTxt = [
+        '爸爸去哪儿啦',
+        '人像摄影中的光感摄影',
+        '娇柔妩媚、美艳大方'];
+        fnFade();
+
+        pic_S.click(function(){
+            iNow = $(this).index();
+            fnFade();
+        })
+
+        $("#PicREC").hover(function(){
+            clearInterval(time); },function(){autoPlay();}) 
+
+       function autoPlay(){
+            time = setInterval(function(){
+                iNow++;
+                iNow %= pTxt.length;
+                fnFade();
+            },3000);
+       }
+
+       autoPlay();
+       function fnFade(){
+            pic_B.each(function(i){
+                if(i != iNow){
+                    pic_B.eq(i).fadeOut().css('ZIndex',1);
+                    pic_S.eq(i).removeClass('active');
+                }
+                else{
+                    pic_B.eq(i).fadeIn().css('ZIndex',2);
+                    pic_S.eq(i).addClass('active');
+                    pic_P.text(pTxt[i]);
+                }
+            })
+       }
+       
+
+
+  })();
+
 });
