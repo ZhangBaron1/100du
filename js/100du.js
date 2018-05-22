@@ -185,4 +185,20 @@ $(function(){
        }
    })();
 
+   //日历 信息
+   (function(){
+     var calendar = $('.calendar');
+     var cLi = $('.calendar li');
+     var day = $('.calendar h3').find('span');
+     var img = $('.calendar li').find('img');
+     var info = $('.today_info');
+     cLi.each(function(){
+         img.hover(function(){
+            info.css('display','block');
+         },function(){
+            info.css('display','none');
+         });
+     })
+
+   })();
 });
