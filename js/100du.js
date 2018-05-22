@@ -108,4 +108,15 @@ $(function(){
             clearInterval(time); },function(){autoPlay();}) 
           
    })(); 
+
+  //BBS 论坛
+  (function(){
+      var bbs = $("#BBS_ID li");
+        bbs.each(function(){
+            $(this).mouseover(function(){
+                bbs.attr('class','');
+                $(this).attr('class','active');
+            })
+       }) 
+  })();  
 });
