@@ -163,9 +163,26 @@ $(function(){
                 }
             })
        }
-       
-
-
   })();
+
+  // option 选项卡切换
+   (function(){
+       fnTab($('.tabNav1'),$('.tabCon1'));
+       fnTab($('.tabNav2'),$('.tabCon2'));
+
+       function fnTab(oNav,aCon){
+            var aElem = oNav.children();
+            aCon.hide().eq(0).show();
+            aElem.each(function(i){
+                $(this).click(function(){
+                    aElem.removeClass('active').addClass('gradient');
+                    $(this).removeClass('gradient').addClass('active');
+                    aElem.find('a').attr('class','triangle_down_gray'); 
+                    $(this).find('a').attr('class','triangle_down_red');
+                    aCon.hide().eq(i).show();
+                })   
+            })
+       }
+   })();
 
 });
