@@ -73,7 +73,7 @@ body { font-size:12px; font-family:"΢���ź�"; margin-bottom:30px; }
 #nav ul { position:absolute; top:10px; }
 #nav li { float:left; }
 #nav li a { display:block; width:66px; padding-top:50px; text-align:center;  background:url(../img/nav_bg.png) no-repeat; color:#333; }
-#nav li a:hover { text-decoration:underline; color:red; }
+#nav li a:hover { color:red; }
 #nav h1 { width:223px; height:62px; margin:0 auto; position:relative; top:10px;}
 #nav .nav_1 { left:11px; }
 #nav .nav_2 { right:11px; }
@@ -100,7 +100,7 @@ body { font-size:12px; font-family:"΢���ź�"; margin-bottom:30px; }
 
 #search .bar { width:958px; height:64px; border-radius:5px; border:1px solid #c40d0e; background:#e21c01; position:absolute; left:-1px; top:16px; box-shadow:2px 3px 2px #dcdcdc; }
 #search .menu{ position:relative; left:226px; top:-27px; }
-#search .menu li{ float: left; width:78px; height:25px; text-align:center; font-size:14px; line-height:25px; border-radius:5px 5px 0 0; border:1px solid #f8d0bf; border-bottom:none; background:#fcfcfc; display:inline-block; margin-right:1px; color:#000; cursor:pointer; box-shadow:1px 0 2px rgba(0,0,0,0.15); } 
+#search .menu li{ float:left; width:78px; height:25px; text-align:center; font-size:14px; line-height:25px; border-radius:5px 5px 0 0; border:1px solid #f8d0bf; border-bottom:none; background:#fcfcfc; display:inline-block; margin-right:1px; color:#000; cursor:pointer; box-shadow:1px 0 2px rgba(0,0,0,0.15); } 
 #search .menu .active{ position: relative; top: -1px; width:78px; height:27px; background:#e21c01; font-weight:bold; color:#fbfbfb; text-shadow:2px 2px 3px rgba(0,0,0,0.25);} 
 
 #search .form { position:absolute; left:226px; top:36px; z-index:3; }
@@ -243,7 +243,6 @@ body { font-size:12px; font-family:"΢���ź�"; margin-bottom:30px; }
 .help_con{ margin-bottom: 10px; overflow: hidden; }
 .help_con p { text-indent: 30px; margin-bottom: 10px; }
 .help_con ul { padding-bottom: 10px; border-bottom:1px solid #ededee; overflow: hidden; }
-.help_con ul li { }
 .help_con .phone { margin-left: 8px; background:url(../img/help.gif) no-repeat; height: 17px; width: 130px; color: #b80000; text-indent: 20px; font-size: 14px; font-weight: bold; }
 .help_con .msn { background:url(../img/help.gif) no-repeat 0px -44px; height: 17px; color: #333; width: 130px; height: 17px; text-indent: 20px; padding-right: 15px; }
 .help_con .user_help { padding:0px 10px; margin-top: 15px; }
@@ -300,13 +299,13 @@ body { font-size:12px; font-family:"΢���ź�"; margin-bottom:30px; }
 .calendar .active { width:36px; height:36px; border:2px solid #d30408; cursor:pointer; }
 .calendar .img { width:40px; height:40px; cursor:pointer; }
 
-.today_info { width:294px; height:84px; padding:10px; border:1px solid #c0c0c0; background:#fff; position:absolute; top:136px; left:288px; box-shadow:4px 4px 0 rgba(0,0,0,0.2); display: none; }
+.today_info { width:294px; height:84px; padding:10px; border:1px solid #c0c0c0; background:#fff; position:absolute; top:129px; left:284px; box-shadow:4px 4px 0 rgba(0,0,0,0.2); display: none; }
 .today_info img { width:80px; height:80px; border:2px solid #dbdbdb; float:left; }
 .today_info .text { width:200px; float:right; }
 .today_info h4 { font-size:12px; color:#333; padding-bottom:8px; }
 .today_info strong { color:#ccc; font-size:18px; vertical-align:middle; }
 .today_info p { color:#999; line-height:20px; }
-.today_info span { width:8px; height:14px; position:absolute; top:45px; left:-8px; background:url(../img/adorn.gif) no-repeat 0 -48px; }
+.today_info span { width:8px; height:14px; position:absolute; top:45px; left:-7px; background:url(../img/adorn.gif) no-repeat 0 -48px; }
 
 .pic_recommend { background: #f8f8f8; border-radius:6px; width: 318px; height: 180px; position: relative; margin: 0 auto; }
 .pic_recommend ul { width: 223px; height: 133px; position: absolute; top:12px; left:12px; }

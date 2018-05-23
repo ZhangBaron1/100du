@@ -187,16 +187,26 @@ $(function(){
 
    //日历 信息
    (function(){
-     var calendar = $('.calendar');
      var cLi = $('.calendar li');
      var day = $('.calendar h3').find('span');
      var img = $('.calendar li').find('img');
      var info = $('.today_info');
+     var info_txt = $('.today_info p');
+     var info_day = $('.today_info strong');
+     var info_img = $('.today_info img');
+
      cLi.each(function(){
          img.hover(function(){
-            info.css('display','block');
+            var tp = $(this).parent().position().top-30;
+            var lft = $(this).parent().position().left+50;
+            info.css({'left':lft,'top':tp});
+            var iday = $(this).parent().index()%day.size();
+            info_day.text(day.eq(iday).text());
+            info_img.attr("src",$(this).attr("src"));
+            info_txt.text($(this).attr("info"));
+            info.show();
          },function(){
-            info.css('display','none');
+            info.hide();
          });
      })
 
