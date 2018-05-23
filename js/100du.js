@@ -209,6 +209,34 @@ $(function(){
             info.hide();
          });
      })
-
    })();
+
+   //hot 
+   (function(){
+       var hLi = $('.hot_pic li');
+       var pTxt = [
+           '',
+           '区域：长沙 <br/>人气：1232',
+           '用户名：性感宝贝<br/>区域：朝阳CBD<br/>人气：12321',
+           '区域：长沙 <br/>人气：1232',
+           '区域: 北京 <br/>人气：1832',
+           '区域：上海 <br/>人气：1232',
+           '区域：长沙 <br/>人气：1232',
+           '区域：长沙 <br/>人气：1232',
+           '区域：广州 <br/>人气：5232',
+           '区域：长沙 <br/>人气：7232',
+           '区域：深圳 <br/>人气：1832',
+           '区域：长沙 <br/>人气：1932'
+            ]
+           hLi.hover(function(){
+            if($(this).index() == 0 )  return;
+            hLi.find('p').remove();
+            var iW = $(this).width()-12;
+            var iH = $(this).height()-12;
+            $(this).append('<p style="width:'+iW+'px; height:'+iH+'px;">'+pTxt[$(this).index()]+'</p>');
+           })
+           
+   })();
+
+
 });
