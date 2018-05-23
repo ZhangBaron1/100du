@@ -86,7 +86,7 @@ $(function(){
                 iNow = -(li_length-2);
             }
                console.log(iNow);
-            ud_ul.stop().animate({'top':iH*iNow},1000,);
+            ud_ul.stop().animate({'top':iH*iNow},1000);
             
           }
 
