@@ -101,7 +101,7 @@ body { font-size:12px; font-family:"΢���ź�"; margin-bottom:30px; }
 #search .bar { width:958px; height:64px; border-radius:5px; border:1px solid #c40d0e; background:#e21c01; position:absolute; left:-1px; top:16px; box-shadow:2px 3px 2px #dcdcdc; }
 #search .menu{ position:relative; left:226px; top:-27px; }
 #search .menu li{ float:left; width:78px; height:25px; text-align:center; font-size:14px; line-height:25px; border-radius:5px 5px 0 0; border:1px solid #f8d0bf; border-bottom:none; background:#fcfcfc; display:inline-block; margin-right:1px; color:#000; cursor:pointer; box-shadow:1px 0 2px rgba(0,0,0,0.15); } 
-#search .menu .active{ position: relative; top: -1px; width:78px; height:27px; background:#e21c01; font-weight:bold; color:#fbfbfb; text-shadow:2px 2px 3px rgba(0,0,0,0.25);} 
+#search .menu .active{ position: relative; top: -1px; width:78px; height:27px; border: 1px solid #e21c01; background:#e21c01; font-weight:bold; color:#fbfbfb; text-shadow:2px 2px 3px rgba(0,0,0,0.25);} 
 
 #search .form { position:absolute; left:226px; top:36px; z-index:3; }
 #search .form .text { width:383px; height:20px; padding:0 10px; background:#fff1ef; color:#ea7a7a; border-radius:3px; border:1px solid #d8a59e; box-shadow:inset 1px 0 2px rgba(0,0,0,0.15); float:left; margin-right:10px; }
