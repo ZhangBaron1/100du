@@ -181,14 +181,22 @@ $(function(){
    (function(){
        fnTab($('.tabNav1'),$('.tabCon1'));
        fnTab($('.tabNav2'),$('.tabCon2'));
+       fnTab($('.tabNav3'),$('.tabCon3'));
+       fnTab($('.tabNav4'),$('.tabCon4'));
 
        function fnTab(oNav,aCon){
             var aElem = oNav.children();
             aCon.hide().eq(0).show();
             aElem.each(function(i){
                 $(this).click(function(){
-                    aElem.removeClass('active').addClass('gradient');
-                    $(this).removeClass('gradient').addClass('active');
+                    if(aElem.hasClass("gradient")){
+                        aElem.removeClass('active').addClass('gradient');
+                        $(this).removeClass('gradient').addClass('active');
+                    }
+                    else{
+                        aElem.removeClass('active');
+                        $(this).addClass('active');
+                    }
                     aElem.find('a').attr('class','triangle_down_gray'); 
                     $(this).find('a').attr('class','triangle_down_red');
                     aCon.hide().eq(i).show();
@@ -197,28 +205,6 @@ $(function(){
        }
    })();
    
-   // 3个tab option 选项卡切换
-   (function(){
-       fnTab($('.tabNav3'),$('.tabCon3'));
-       fnTab($('.tabNav4'),$('.tabCon4'));
-
-       function fnTab(oNav,aCon){
-        var aElem = oNav.children();
-        aCon.hide().eq(0).show();
-        console.log(aCon.eq(1).html());
-        aElem.each(function(i){
-            $(this).click(function(){
-                aElem.removeClass('active');
-                $(this).addClass('active');
-                aElem.find('a').attr('class','triangle_down_gray'); 
-                $(this).find('a').attr('class','triangle_down_red');
-                aCon.hide().eq(i).show();
-            })
-       })
-    }
-   })();
-
-
    //日历 信息
    (function(){
      var cLi = $('.calendar li');
