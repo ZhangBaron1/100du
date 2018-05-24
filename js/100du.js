@@ -1,4 +1,16 @@
 $(function(){
+  // 城市切换
+   (function(){
+    var city = $('#header .city a');
+        city.each(function(){
+            city.click(function(){
+                $(city).removeClass('active');
+                $(this).addClass('active');
+            })     
+        })
+   })();
+
+
   // 搜索切换
    (function(){
        var aTxt = [
@@ -184,6 +196,28 @@ $(function(){
             })
        }
    })();
+   
+   // 3个tab option 选项卡切换
+   (function(){
+       fnTab($('.tabNav3'),$('.tabCon3'));
+       fnTab($('.tabNav4'),$('.tabCon4'));
+
+       function fnTab(oNav,aCon){
+        var aElem = oNav.children();
+        aCon.hide().eq(0).show();
+        console.log(aCon.eq(1).html());
+        aElem.each(function(i){
+            $(this).click(function(){
+                aElem.removeClass('active');
+                $(this).addClass('active');
+                aElem.find('a').attr('class','triangle_down_gray'); 
+                $(this).find('a').attr('class','triangle_down_red');
+                aCon.hide().eq(i).show();
+            })
+       })
+    }
+   })();
+
 
    //日历 信息
    (function(){
