@@ -10,7 +10,6 @@ $(function(){
         })
    })();
 
-
   // 搜索切换
    (function(){
        var aTxt = [
@@ -56,9 +55,6 @@ $(function(){
       var iNow = 0;
       var time = null;
 
-          //console.log(li_length);
-          //console.log(iH);
-      
           $("#updateUpBtn").click(function(){
             doMove(-1);
           });
@@ -92,12 +88,9 @@ $(function(){
                 {
                   ud_ul.find("li:last").prependTo(ud_ul);
                 }   
-               console.log(ud_ul.html());
-               console.log(-iH);
                  ud_ul.css({'top':-iH*(li_length-1)});
                 iNow = -(li_length-2);
             }
-               console.log(iNow);
             ud_ul.stop().animate({'top':iH*iNow},1000);
             
           }
@@ -254,9 +247,7 @@ $(function(){
             var iW = $(this).width()-12;
             var iH = $(this).height()-12;
             $(this).append('<p style="width:'+iW+'px; height:'+iH+'px;">'+pTxt[$(this).index()]+'</p>');
-           })
-           
+           })        
    })();
-
-
+   
 });
