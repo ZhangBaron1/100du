@@ -9,7 +9,7 @@ img { border:none; vertical-align:top; }
 table { border-collapse:collapse; }
 input,textarea { outline:none; }
 textarea { resize:none; overflow:auto; }
-body { font-size:12px; font-family:"΢���ź�"; margin-bottom:30px; }
+body { font-size:12px; font-family:"微软雅黑"; margin-bottom:30px; }
 /* end reset */
 
 .gradient {
