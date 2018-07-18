@@ -186,7 +186,7 @@ body { font-size:12px; font-family:"微软雅黑"; margin-bottom:30px; }
 .col_2 img { position: relative; top: 9px; left: 9px;}
 
 
-.pic_list li { overflow: hidden; border-bottom: 1px dotted #cbcbca; padding-bottom: 10px;  margin-bottom: 10px; }
+.pic_list li { overflow: hidden; border-bottom: 1px dotted #cbcbca; padding-bottom: 10px;  margin-bottom: 10px; vertical-align: middle;}
 .pic_list .normal_bottom { margin-bottom: 0px; }
 .pic_list .img { width: 94px; height: 71px; border: 1px solid #dadada; }
 .pic_list .img a { display: block; width: 90px; height: 67px; margin: 2px; }
@@ -229,7 +229,7 @@ body { font-size:12px; font-family:"微软雅黑"; margin-bottom:30px; }
 .login p a:hover { text-decoration:underline; }
 
 .bbs_list { margin-bottom: 20px; }
-.bbs_list li { width: 318px; height: 30px; background: #f1f1f1; border-radius: 5px; margin-bottom: 3px; line-height: 30px; overflow: hidden; }
+.bbs_list li { width: 318px; height: 30px; background: #f1f1f1; border-radius: 5px; margin-bottom: 3px; line-height: 30px; overflow: hidden; vertical-align: middle;}
 
 .bbs_list .active { height: 70px; background: #d90000; color: #fff; position: relative; }
 .bbs_list .active img, .bbs_list .active em, .bbs_list .active b{ display: block; position: absolute; }
@@ -258,8 +258,8 @@ body { font-size:12px; font-family:"微软雅黑"; margin-bottom:30px; }
 .help_con dd a { color:#333; display:block; width:140px; white-space: nowrap; word-break: keep-all; overflow: hidden; text-overflow: ellipsis;}
 .help_con dd a:hover { text-decoration:underline; }
 
-.media_list { margin-bottom: 2px;}
-.media_list li { overflow: hidden; padding-top: 3px;}
+.media_list { margin-bottom: 12px; margin-top: 3px;}
+.media_list li { overflow: hidden;  vertical-align: middle; height: 40px;}
 .media_list img { float:left;}
 .media_list a { float: left; font-size: 14px; line-height: 20px; width: 200px; height:40px; padding-left:30px; color: #292929; display:block; word-break:break-all; overflow: hidden; text-overflow: ellipsis;}
 .media_list a:hover{ text-decoration: underline; }
@@ -321,7 +321,7 @@ body { font-size:12px; font-family:"微软雅黑"; margin-bottom:30px; }
 .pic_recommend p { color: #000; position: absolute; bottom: 10px; left: 15px; line-height: 18px; }
 
 .recommend_list { padding: 20px 25px 0px 25px; height: 220px; width: 298px; margin: 0 auto; }
-.recommend_list li { line-height: 16px; margin-bottom: 12px; overflow: hidden;}
+.recommend_list li { line-height: 16px; margin-bottom: 12px; overflow: hidden; vertical-align: middle;}
 .recommend_list em {float:left; display:block; color: #dfdfdf; margin-right: 2px; }
 .recommend_list a { float:left; color: #454545 ; text-indent:4px; display:block; width: 210px; word-break: keep-all; white-space: nowrap; overflow:hidden; text-overflow: ellipsis;}
 .recommend_list a:hover { text-decoration: underline; }

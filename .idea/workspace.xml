@@ -17,8 +17,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="743" column="26" lean-forward="true" selection-start-line="743" selection-start-column="26" selection-end-line="743" selection-end-column="26" />
+            <state relative-caret-position="123">
+              <caret line="735" column="25" selection-start-line="735" selection-start-column="18" selection-end-line="735" selection-end-column="25" />
               <folding>
                 <element signature="n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#ul#1;n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -44,8 +44,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="260" column="30" selection-start-line="260" selection-start-column="30" selection-end-line="260" selection-end-column="30" />
+            <state relative-caret-position="270">
+              <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -58,9 +58,12 @@
       <find>recommend_list</find>
       <find>img</find>
       <find>text-indent</find>
-      <find>media</find>
-      <find>tabCon4</find>
       <find>.media_list a</find>
+      <find>tabCon4</find>
+      <find>list_se</find>
+      <find>pic_list</find>
+      <find>media</find>
+      <find>section</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -84,7 +87,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-23" />
     <option name="y" value="-2" />
     <option name="width" value="1346" />
@@ -149,18 +152,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531893490646</updated>
-      <workItem from="1531893494832" duration="15024000" />
+      <workItem from="1531893494832" duration="21235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15024000" />
+    <option name="totallyTimeSpent" value="21235000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24963397" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.24963397" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -178,6 +181,25 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24963397" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -186,10 +208,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/100du.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4833">
+          <caret line="247" column="15" selection-start-line="247" selection-start-column="12" selection-end-line="247" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="743" column="26" lean-forward="true" selection-start-line="743" selection-start-column="26" selection-end-line="743" selection-end-column="26" />
+        <state relative-caret-position="123">
+          <caret line="735" column="25" selection-start-line="735" selection-start-column="18" selection-end-line="735" selection-end-column="25" />
           <folding>
             <element signature="n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#1;n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -202,17 +231,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/100du.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4833">
-          <caret line="247" column="15" selection-start-line="247" selection-start-column="12" selection-end-line="247" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="260" column="30" selection-start-line="260" selection-start-column="30" selection-end-line="260" selection-end-column="30" />
+        <state relative-caret-position="270">
+          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
         </state>
       </provider>
     </entry>
