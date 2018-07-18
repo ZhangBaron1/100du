@@ -6,7 +6,7 @@ $(function(){
             city.click(function(){
                 $(city).removeClass('active');
                 $(this).addClass('active');
-            })     
+            })
         })
    })();
 
@@ -21,27 +21,29 @@ $(function(){
        ];
        var oText = $("#search_txt").find(".text");
        var iNow = 0;
-       oText.val(aTxt[iNow]);
+       oText.attr('placeholder',aTxt[iNow]);
        var aLi = $("#menu li");
        aLi.each(function( index ){
            $(this).click(function(){
+             if(iNow != index)
+               oText.val('');
              iNow = index;
              aLi.attr('class','gradient');
              $(this).attr('class','active');
-             oText.val(aTxt[iNow]);
+             oText.attr('placeholder',aTxt[iNow]);
            });
        });
 
        oText.focus(function(){
-        if(oText.val() == aTxt[iNow])
+        if(oText.attr('placeholder') == aTxt[iNow])
         {
-            oText.val('');
+          oText.attr('placeholder','');
         }
        });
        oText.blur(function(){
-        if(oText.val() == '')
+        if(oText.attr('placeholder') == '')
         {
-            oText.val(aTxt[iNow]);
+          oText.attr('placeholder',aTxt[iNow]);
         }
        });
    })();
@@ -51,7 +53,7 @@ $(function(){
       var ud_ul = $(".update ul");
       var oDiv = $(".update");
       var li_length = ud_ul.find('li').length;
-      var iH =  ud_ul.find('li').height();  
+      var iH =  ud_ul.find('li').height();
       var iNow = 0;
       var time = null;
 
@@ -72,7 +74,7 @@ $(function(){
 
           function doMove(direction){
             iNow += direction;
-            
+
             if(Math.abs(iNow) >= li_length )
             {
                 for(var num = 0; num < li_length-1; num++ )
@@ -87,12 +89,12 @@ $(function(){
                for(var num = 0; num < li_length-1; num++ )
                 {
                   ud_ul.find("li:last").prependTo(ud_ul);
-                }   
+                }
                  ud_ul.css({'top':-iH*(li_length-1)});
                 iNow = -(li_length-2);
             }
             ud_ul.stop().animate({'top':iH*iNow},1000);
-            
+
           }
 
           function scroll(direction){
@@ -110,9 +112,9 @@ $(function(){
           }
 
           oDiv.hover(function(){
-            clearInterval(time); },function(){autoPlay();}) 
-          
-   })(); 
+            clearInterval(time); },function(){autoPlay();})
+
+   })();
 
   //BBS 论坛
   (function(){
@@ -122,8 +124,8 @@ $(function(){
                 bbs.attr('class','');
                 $(this).attr('class','active');
             })
-       }) 
-  })();  
+       })
+  })();
 
   // 精彩推荐 图片切换
   (function(){
@@ -144,7 +146,7 @@ $(function(){
         })
 
         $("#PicREC").hover(function(){
-            clearInterval(time); },function(){autoPlay();}) 
+            clearInterval(time); },function(){autoPlay();})
 
        function autoPlay(){
             time = setInterval(function(){
@@ -190,14 +192,14 @@ $(function(){
                         aElem.removeClass('active');
                         $(this).addClass('active');
                     }
-                    aElem.find('a').attr('class','triangle_down_gray'); 
+                    aElem.find('a').attr('class','triangle_down_gray');
                     $(this).find('a').attr('class','triangle_down_red');
                     aCon.hide().eq(i).show();
-                })   
+                })
             })
        }
    })();
-   
+
    //日历 信息
    (function(){
      var cLi = $('.calendar li');
@@ -224,7 +226,7 @@ $(function(){
      })
    })();
 
-   //hot 
+   //hot
    (function(){
        var hLi = $('.hot_pic li');
        var pTxt = [
@@ -247,7 +249,7 @@ $(function(){
             var iW = $(this).width()-12;
             var iH = $(this).height()-12;
             $(this).append('<p style="width:'+iW+'px; height:'+iH+'px;">'+pTxt[$(this).index()]+'</p>');
-           })        
+           })
    })();
-   
+
 });
