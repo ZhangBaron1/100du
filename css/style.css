@@ -259,7 +259,7 @@ body { font-size:12px; font-family:"微软雅黑"; margin-bottom:30px; }
 .help_con dd a { color:#333; display:block; width:140px; white-space: nowrap; word-break: keep-all; overflow: hidden; text-overflow: ellipsis;}
 .help_con dd a:hover { text-decoration:underline; }
 
-.media_list { margin-bottom: 12px; margin-top: 3px;}
+.media_list { margin-bottom: 12px; margin-top: 5px;}
 .media_list li { overflow: hidden;  vertical-align: middle; height: 40px;}
 .media_list img { float:left;}
 .media_list a { float: left; font-size: 14px; line-height: 20px; width: 200px; height:40px; padding-left:30px; color: #292929; display:block; word-break:break-all; overflow: hidden; text-overflow: ellipsis;}
